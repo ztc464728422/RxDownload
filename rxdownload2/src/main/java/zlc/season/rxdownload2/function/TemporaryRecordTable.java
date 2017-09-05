@@ -96,7 +96,8 @@ public class TemporaryRecordTable {
         if (response.code() == 304) {
             map.get(url).setFileChanged(false);
         } else if (response.code() == 200) {
-            map.get(url).setFileChanged(true);
+//            map.get(url).setFileChanged(true);
+            map.get(url).setFileChanged(false);//zzw 一直返回文件未更改
         }
     }
 
